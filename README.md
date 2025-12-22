@@ -39,6 +39,24 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+---
+
+## Development notes (Tailwind + Forms)
+
+- This project uses **Tailwind CSS** for styling. I added `tailwind.config.js` and `postcss.config.js` and the Tailwind directives to `src/index.css`.
+- You need to install the new dependencies locally (package changes have been added to `package.json`):
+
+  npm install
+
+  or to install only the new ones:
+
+  npm install react-router-dom
+  npm install -D tailwindcss postcss autoprefixer @tailwindcss/forms
+
+- The contact form uses **FormSpark**. Replace the placeholder `REPLACE_WITH_FORMSPARK_ENDPOINT` in `src/pages/Contact.js` with your Formspark endpoint, e.g. `https://submit.formspark.io/your-form-id`.
+
+- For deployment, you mentioned using **Cloudflare Pages**; I'll add a deploy workflow if you'd like.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
