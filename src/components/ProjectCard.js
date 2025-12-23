@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default function ProjectCard({ project }) {
+  
   return (
     <article className="bg-white rounded-lg shadow p-6">
       <h3 className="text-lg font-semibold text-gray-900">{project.title}</h3>

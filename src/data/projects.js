@@ -20,6 +20,13 @@ const projects = [
     repo: '#',
     live: '#',
   },
+  {
+    id: 3,
+    title: 'Testing App',
+    description: 'A small weather app using a public API to show forecasts.',
+    repo: '#',
+    live: '#',
+  },
 ];
 
 export default projects;
